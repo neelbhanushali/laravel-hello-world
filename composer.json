@@ -1,13 +1,25 @@
 {
-    "name": "neelbhanushali/laravel-hello-world",
-    "description": "A laravel package that has a command that spits out `Hello World`.",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Neel Bhanushali",
-            "email": "neal.bhanushali@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {}
+  "name": "neelbhanushali/laravel-hello-world",
+  "description": "A laravel package that has a command that spits out `Hello World`.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Neel Bhanushali",
+      "email": "neal.bhanushali@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "NeelBhanushali\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "NeelBhanushali\\Commands\\LaravelHelloWorldServiceProvider"
+      ]
+    }
+  }
 }
