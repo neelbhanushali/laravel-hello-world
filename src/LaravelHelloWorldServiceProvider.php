@@ -23,6 +23,10 @@ class LaravelHelloWorldServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->singleton('command.neelbhanushali.hello-world', function ($app) {
+            return $app['NeelBhanushali\Commands\HelloWorld'];
+        });
+
+        $this->commands('command.neelbhanushali.hello-world');
     }
 }
