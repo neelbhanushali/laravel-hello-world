@@ -1,6 +1,6 @@
 <?php
 
-namespace NeelBhanushali\Commands;
+namespace NeelBhanushali;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -19,7 +19,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "NeelBhanushali\\Commands\\LaravelHelloWorldServiceProvider"
+        "NeelBhanushali\\LaravelHelloWorldServiceProvider"
       ]
     }
   }
